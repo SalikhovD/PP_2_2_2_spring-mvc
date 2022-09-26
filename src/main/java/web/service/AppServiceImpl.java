@@ -28,7 +28,7 @@ public class AppServiceImpl implements AppService {
     }
 
     @Override
-    public List<String> getHelloMessagesList() {
+    public List<String> getWelcomeMessagesList() {
         List<String> messages = new ArrayList<>();
         messages.add("Hello!");
         messages.add("I'm Spring MVC application");

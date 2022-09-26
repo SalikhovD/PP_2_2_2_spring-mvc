@@ -15,7 +15,7 @@ public class HelloController {
 
     @GetMapping(value = "/")
     public String printWelcome(ModelMap model) {
-        model.addAttribute("messages", service.getHelloMessagesList());
+        model.addAttribute("messages", service.getWelcomeMessagesList());
         return "index";
     }
 
