@@ -9,7 +9,7 @@ import java.util.List;
 @Component
 public class AppServiceImpl implements AppService {
 
-    List<Car> carList;
+    private final List<Car> carList;
 
     public AppServiceImpl() {
         carList = new ArrayList<>();

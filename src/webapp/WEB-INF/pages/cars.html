@@ -9,13 +9,11 @@
         <th>Series</th>
         <th>Horse power</th>
     </tr>
-
     <tr th:each="car : ${carList}">
         <td th:text="${car.model}"/>
         <td th:text="${car.series}"/>
         <td th:text="${car.horsePower}"/>
     </tr>
-
 </table>
 </body>
 </html>

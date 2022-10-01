@@ -1,6 +1,5 @@
 package web.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -11,9 +10,8 @@ import web.service.AppService;
 @Controller
 public class HelloController {
 
-    AppService service;
+    private final AppService service;
 
-    @Autowired
     HelloController(AppService service) {
         this.service = service;
     }
